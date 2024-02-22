@@ -5,6 +5,10 @@ darkModeToggle.mode = 'dark';
 // Set the mode to light
 darkModeToggle.mode = 'light';
 
+window.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+}, false);
+
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
