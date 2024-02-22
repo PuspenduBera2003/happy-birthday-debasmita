@@ -9,6 +9,12 @@ window.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 }, false);
 
+document.querySelectorAll('img').forEach(function(img) {
+    img.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+});
+
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
